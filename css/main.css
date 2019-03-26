@@ -1,0 +1,227 @@
+.container {
+    max-width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.container:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+@font-face {
+    font-family: 'M+ 2c';
+    src: url(../fonts/mplus-2c-regular.ttf);
+ }
+h2, p {
+    font-family: 'M+ 2c';
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(90deg, #0E69BC, #0E69BC, #0C494A, #0A4555);
+    margin: 0 auto;
+    top: 0;
+    z-index: 999;
+}
+.headerTitle {
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+/* sc_top START */
+.sc_top {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #C4C4C4;
+}
+.sc_top_row1_img {
+    display: block;
+    width: 100%;
+    border-radius: 50px;
+}
+.sc_top_row1_desc {
+    margin-top: 10px;
+}
+.sc_top_row2_img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px grey;
+}
+.sc_top_row2_desc {
+    text-align: center;
+    margin-top: 10px;
+}
+/* sc_top END */
+
+/* sc_carousel START */
+.sc_carousel {
+    margin: 50px 0;
+    padding: 0 50px;
+    border-bottom: 3px solid #C4C4C4;
+}
+.sc_carousel_item img {
+    display: block;
+}
+.sc_carousel_desc {
+    margin-top: 10px;
+}
+.owl-prev {
+    width: 15px;
+    font-size: 35px!important;
+    position: absolute;
+    top: calc(50% - 50px);
+    margin-left: -50px;
+    display: block!important;
+    color: #1E65BA!important;
+}
+.owl-next {
+    width: 15px;
+    font-size: 35px!important;
+    position: absolute;
+    top: calc(50% - 50px);
+    right: 10px;
+    display: block!important;
+    color: #3591E7!important;
+}
+/* sc_carousel END */
+
+/* sc_tabs START */
+.sc_tabs {
+    margin: 50px 0;
+}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+    margin: 0 2px 0 0;
+    border-radius: 25px 25px 0 0;
+	cursor: pointer;
+	padding: 9px 60px;
+	background-color: #C4C4C4;
+    color: #fff;
+    font-family: 'M+ 2c';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+	overflow: hidden;
+	position: relative;
+}
+ul.tabs li:hover {
+	background-color: #ccc;
+	color: #333;
+}
+ul.tabs li.active {
+	background-color: #72B8B4;
+	color: #fff;
+	display: block;
+}
+.tab_container {
+    margin-top: 16px;
+    border-radius: 0 25px 25px 25px;
+    background-image: linear-gradient(#72B8B4, #72B8B4, #24747D, #3F4265, #3F4265);
+	clear: both;
+	float: left;
+	width: 100%;
+	overflow: auto;
+}
+.tab_content {
+	padding: 20px;
+    display: none;
+    color: #fff;
+}
+.tab_content_img {
+    width: 100%;
+}
+.tab_content_arrow {
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+}
+.tab_drawer_heading { 
+    display: none; 
+}
+/* sc_tabs END */
+#footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #BBBBBB;
+    margin-bottom: 15px;
+}
+#footerMobile {
+    display: none;
+}
+.footerTitle {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+#footer i {
+    font-size: 60px;
+    cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+    .container {
+        max-width: 98%;
+    }
+	.tabs {
+		display: none;
+	}
+	.tab_drawer_heading {
+		margin: 0;
+        padding: 5px 20px;
+        border-top: 3px solid #FFF;
+		display: block;
+        cursor: pointer;
+        font-family: 'M+ 2c';
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #0E68BE;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+    }
+    .tab_drawer_heading:last-child {
+        border-bottom: none;
+    }
+	.d_active {
+		background-color: #72B8B4;
+        color: #fff;
+        border-top: 3px solid #FFF;
+    }
+    .tab_content_arrow {
+        display: none;
+    }
+    #footerMobile {
+        display: block;
+        width: 100%;
+        background-color: #044172;
+    }
+    #footerMobile_desc {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 8px 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .sc_top_row2_desc_mobile {
+        font-size: 13px;
+    }
+}

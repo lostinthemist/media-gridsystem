@@ -1,0 +1,464 @@
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.container:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+section {
+    margin: 50px 0;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../font/HelveticaNeue.ttf);
+ }
+ 
+ * {
+    font-family: 'Helvetica Neue';
+ }
+ p {
+     font-size: 18px;
+ }
+.sectionTitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+.header_right ul, .lhv_menu_ul ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header_right li, .lhv_menu_ul li {
+    display: inline;
+}
+
+/* header START */
+.header {
+    padding: 25px;
+}
+.header a {
+    text-transform: uppercase;
+    color: #5b6b7b;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header_left {
+    float: left;
+}
+.header_right {
+    float: right;
+}
+
+.header_left_list {
+    display: block;
+}
+.header_left img {
+    margin-bottom: 15px;
+    vertical-align: baseline;
+}
+.header_left ul {
+    padding-left: 40px;
+    display: inline-block;
+}
+.header_right a {
+    padding-left: 25px;
+}
+.header_right ul {
+    margin-top: 25px;
+}
+.login_button {
+    background-color: #9EA7B0;
+    padding: 10px 30px 10px 0;
+    margin-left: 25px; 
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.login_button a {
+    color: #fff;
+}
+.login_button:hover{
+    background-color: #5b6b7b;
+}
+@media screen and (max-width: 400px) {
+    .header_left ul {
+        display: none;
+    }
+    .header_left img {
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .header_right {
+        display: none;
+    }
+    .header_left ul {
+        padding-left: 20px;
+    }
+}
+/* header END */
+
+/* main START */
+/* lhv_menu START */
+.lhv_menu {
+    margin-top: 0px !important;
+    text-align: center;
+    background-color: #F1F1F1;
+    padding: 15px 15px 1px 15px;
+}
+.lhv_menu a {
+    font-size: 13px;
+    color: #5b6b7b;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-weight: bold;
+}
+/* lhv_menu END */
+
+/* lhv_noortekaart START */
+.sectionTitleMain {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.lhv_noortekaart_introduction {
+    font-size: 30px;
+}
+.lhv_noortekaart_ul {
+    text-align: center;
+    margin-bottom: 75px;
+}
+.lhv_noortekaart_ul a {
+    font-size: 16px;
+    color: #5b6b7b;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+.lhv_noortekaart_ul a:hover{
+    background-color: #5b6b7b;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.lhv_noortekaart_ul li {
+    display: inline;
+}
+.fa {
+    margin-right: 15px;
+    color: #5b6b7b;
+}
+.lhv_noortekaart_introduction_orderButton {
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    background-color: #5b6b7b;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.lhv_noortekaart_introduction_orderButton:hover{
+    color: #fff;
+    background-color: #000;
+}
+.lhv_noortekaart_img {
+    width: 85%;
+    float: right;
+    margin-top: 45px;
+}
+.lhv_noortekaart_coloredCards {
+    float: right;
+    margin-top: 40px;
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+.lhv_noortekaart_coloredCards img {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+    right: 20%;
+}
+@media screen and (max-width: 500px) {
+    .lhv_noortekaart_coloredCards img {
+        display: none;
+    }
+    .lhv_noortekaart_leftArea {
+        width: 100%;
+    }
+    .lhv_noortekaart_rightArea {
+        display: none;
+    }
+}
+@media screen and (max-width: 766px) {
+    .lhv_noortekaart_coloredCards img {
+        display: none;
+    }
+    .lhv_noortekaart_img {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 100px) and (min-width: 766px)  {
+    .lhv_noortekaart_coloredCards img {
+        right: 0%;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .lhv_noortekaart_coloredCards img {
+        right: 5%;
+    }
+}
+/* lhv_noortekaart END */
+
+/* lhv_omadused START */
+.lhv_omadus_item {
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    margin-bottom: 20px;
+}
+.lhv_omadus_item a {
+    color: #5b6b7b;
+    text-decoration: underline;
+}
+.lhv_omadus_item:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.lhv_omadus_item_imgArea {
+    width: 20%;
+    float: left;
+}
+.lhv_omadus_item_textArea {
+    width: 80%;
+    float: right;
+    padding-left: 25px;
+}
+.lhv_omadus_item_textArea_title {
+    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    .lhv_omadus_item_imgArea {
+        display: none;
+        /* float: left; */
+    }
+    .lhv_omadus_item_textArea {
+        width: 100%;
+        /* float: right; */
+        padding-left: 0;
+    }
+}
+/* lhv_omadused END */
+
+/* lhv_soodustused START */
+.lhv_soodustus_boxArea {
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+.lhv_soodustus_icon {
+    margin-bottom: 10px;
+}
+.lhv_soodustus_itemTitle {
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+    border-bottom: 1.5px dashed #9EA7B0;
+    border-width: 2px;
+}
+.lhv_soodustus_img {
+    float: right;
+    width: 30%;
+    margin: 5px 0;
+}
+@media screen and (max-width: 766px) {
+    .lhv_soodustus_boxArea {
+        text-align: center;
+    }
+}
+/* lhv_soodustused END */
+
+/* lhv_auhinnad START */
+.lhv_auhind_leftArea a, .lhv_auhind_rightArea a {
+    color: #5b6b7b;
+}
+.lhv_auhind_rightArea_item{
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    margin-bottom: 25px;
+}
+.lhv_auhind_rightArea_item:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.lhv_auhind_circle {
+    float: left;
+    border: 1px solid crimson;
+    border-radius: 100%;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+}
+.lhv_auhind_descArea {
+    width: 85%;
+    float: right;
+    padding: 15px 0 0 20px;
+}
+.lhv_auhind_circle_number {
+    margin-top: calc(50% - 25px);
+    font-size: 35px;
+    color: crimson;
+}
+.lhv_auhind_circleLine {
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 90px;
+    left: 60px;
+    height: 25px;
+    border-left: 2px solid crimson;
+}
+.lhv_auhind_circleLine2 {
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 205px;
+    left: 60px;
+    height: 25px;
+    border-left: 2px solid crimson;
+}
+@media screen and (max-width: 600px) {
+    .lhv_auhind_descArea {
+        width: 100%;
+        padding: 25px 0 0 0;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .lhv_auhind_circle, .lhv_auhind_circle_number, .lhv_auhind_circleLine, .lhv_auhind_circleLine2 {
+        display: none;
+    }
+}
+/* lhv_auhinnad END */
+
+/* lhv_tingimus START */
+.lhv_tingimus ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.lhv_tingimus table {
+    margin-bottom: 50px;
+}
+#table_topBorder {
+    border-top: 2px solid lightgrey;
+}
+th {
+    border-right: 2px solid lightgrey;
+    font-weight: bold;
+}
+td {
+    padding-left: 20px;
+}
+#table_bottomBorder {
+    border-bottom: 2px solid lightgrey;
+}
+/* lhv_tingimus END */
+
+/* lhv_mobiil START */
+.lhv_mobiil_desc {
+    text-align: center;
+}
+.lhv_mobiil_app {
+    float: right;
+    width: 75%;
+}
+#lhv_mobiil_features {
+    padding-top: 10%;
+}
+.lhv_mobiil_appstores {
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.lhv_mobiil_appstores img {
+    width: 150px;
+}
+#appStore {
+    margin-right: 5px;
+    height: 46px;
+}
+#googlePlay {
+    margin-left: 5px;
+}
+@media screen and (max-width: 600px) {
+    .lhv_mobiil_app {
+        /* float: right; */
+        width: 100%;
+    }
+}
+/* lhv_mobiil END */
+/* main END */
+
+/* footer START */
+footer {
+    background-color: #F1F1F1;
+    padding: 30px 0;
+    color: #5b6b7b;
+}
+footer a {
+    color: #5b6b7b;
+    text-decoration: underline;
+}
+footer img {
+    margin-right: 10px;
+}
+footer li {
+    margin-bottom: 5px;
+}
+.footer_columnTitle { 
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#footerDesc {
+    border-top: 2px solid lightgrey;
+    padding-top: 40px;
+    font-size: 13px;
+    color: #5b6b7b;
+}
+#footerDesc a {
+    text-decoration: underline;
+    color: #5b6b7b;
+}
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 0 0 30px 0;
+    }
+    .footerColumns {
+        display: none;
+    }
+    #footerDesc {
+        padding-top: 20px;
+    }
+}
+/* footer END */

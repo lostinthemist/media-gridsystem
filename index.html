@@ -1,3 +1,271 @@
-Express Media coding testwork
+<!DOCTYPE html>
+<html>
 
-Can you see some changes?
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <title>Ekspress Meedia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- CSS -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">    
+    <!-- CSS main -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <!-- JQuery -->
+    
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .blind {
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- MarkUp -->
+    <div class="wrap">
+        <!-- header START -->
+        <header>
+            <h2 class="headerTitle">Tabula Rasa</h2>
+        </header>
+        <!-- header END -->
+
+        <!-- main START -->
+        <div class="main">  
+            <div class="container">
+                <section class="sc_top">
+                <h1 class="blind">Top 6</h1>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/ristkylik.jpg" alt="Pilt" class="sc_top_row1_img">
+                            <p class="sc_top_row1_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/ristkylik.jpg" alt="Pilt" class="sc_top_row1_img">
+                            <p class="sc_top_row1_desc">Nullam ac turpis sed lecctus fringila solades. Pellenteque vestibulum masssa leo.</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/ristkylik.jpg" alt="Pilt" class="sc_top_row1_img">
+                            <p class="sc_top_row1_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                            <img src="images/ruut.jpg" alt="Pilt" class="sc_top_row2_img">
+                            <p class="sc_top_row2_desc sc_top_row2_desc_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                            <img src="images/ruut.jpg" alt="Pilt" class="sc_top_row2_img">
+                            <p class="sc_top_row2_desc sc_top_row2_desc_mobile">Nullam ac turpis sed lecctus fringila solades. Pellenteque vestibulum masssa leo.</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <img src="images/ruut.jpg" alt="Pilt" class="sc_top_row2_img">
+                            <p class="sc_top_row2_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc_gallery">
+                <h1 class="blind">Galerii</h1>
+                    <div class="sc_carousel owl-carousel">
+                        <div class="sc_carousel_item">
+                            <img src="images/ristkylik.jpg" alt="Gallery pilt">
+                            <p class="sc_carousel_desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="sc_carousel_item">
+                            <img src="images/ristkylik.jpg" alt="Gallery pilt">
+                            <p class="sc_carousel_desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="sc_carousel_item">
+                            <img src="images/ristkylik.jpg" alt="Gallery pilt">
+                            <p class="sc_carousel_desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="sc_carousel_item">
+                            <img src="images/ristkylik.jpg" alt="Gallery pilt">
+                            <p class="sc_carousel_desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="sc_carousel_item">
+                            <img src="images/ristkylik.jpg" alt="Gallery pilt">
+                            <p class="sc_carousel_desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="sc_carousel_item">
+                            <img src="images/ristkylik.jpg" alt="Gallery pilt">
+                            <p class="sc_carousel_desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sc_tabs">
+                    <h1 class="blind">Tab sektsioon</h1>
+                    <ul class="tabs">
+                        <li class="active" rel="tab1">Tabula</li>
+                        <li rel="tab2">Rasa</li>
+                        <li rel="tab3">Tabula</li>
+                        <li rel="tab4">Rasa</li>
+                    </ul>
+                    <div class="tab_container">
+                        <h3 class="d_active tab_drawer_heading" rel="tab1">Tabula</h3>
+                        <div id="tab1" class="tab_content">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <img src="images/ristkylik.jpg" class="tab_content_img">
+                                </div>
+                                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                    <h2>Title Lorem Ipsum Dolores</h2>
+                                    <p>Nullam ac turpis sed lecctus fringila solades. Pellenteque vestibulum masssa leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>
+                                    <a href="#" class="tab_content_arrow"><i class="fa fa-chevron-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="tab_drawer_heading" rel="tab2">Rasa</h3>
+                        <div id="tab2" class="tab_content">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <img src="images/ristkylik.jpg" class="tab_content_img">
+                                </div>
+                                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                    <h2>Title Lorem Ipsum Dolores</h2>
+                                    <p>Nullam ac turpis sed lecctus fringila solades. Pellenteque vestibulum masssa leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>
+                                    <a href="#" class="tab_content_arrow"><i class="fa fa-chevron-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="tab_drawer_heading" rel="tab3">Tabula</h3>
+                            <div id="tab3" class="tab_content">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <img src="images/ristkylik.jpg" class="tab_content_img">
+                                    </div>
+                                    <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                        <h2>Title Lorem Ipsum Dolores</h2>
+                                        <p>Nullam ac turpis sed lecctus fringila solades. Pellenteque vestibulum masssa leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>
+                                        <a href="#" class="tab_content_arrow"><i class="fa fa-chevron-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        <h3 class="tab_drawer_heading" rel="tab4">Rasa</h3>
+                        <div id="tab4" class="tab_content">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <img src="images/ristkylik.jpg" class="tab_content_img">
+                                </div>
+                                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                    <h2>Title Lorem Ipsum Dolores</h2>
+                                    <p>Nullam ac turpis sed lecctus fringila solades. Pellenteque vestibulum masssa leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>
+                                    <a href="#" class="tab_content_arrow"><i class="fa fa-chevron-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>   
+        </div>
+        <!-- main END -->
+
+        <!-- footer START -->
+        <footer>
+            <div id="footer">
+                <div class="container">
+                    <div id="footerMobile">
+                        <p id="footerMobile_desc">tabula rasa tabula rasa part rasa part tabula</p>
+                    </div>
+                    <h3 class="footerTitle">Tagasi<br>üles</h3>
+                    <a id="toTop">
+                        <i class="fa fa-chevron-circle-up"></i>
+                    </a>
+                </div>    
+            </div>               
+        </footer>
+        <!-- footer END -->
+    </div>
+
+    <!-- Javascript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        // sticky header
+        $(window).scroll(function() {
+		var height = $(window).scrollTop();
+		if(height  > 20) {
+			$("header").css({"position": "fixed"});
+		} else {
+			$("header").css({"position": "relative"});
+		}
+	    });
+
+        // back to top
+        $("#toTop").click(function () {
+            $("html, body").animate({scrollTop: 0}, 500);
+        });
+
+        // sc_gallery carousel
+        $(document).ready(function(){
+            $('.sc_carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+            items: 3.5,
+            responsive:{
+                0:{
+                    items: 2.5
+                },
+                600:{
+                    items: 3.5
+                },
+            },
+        })
+        });
+
+        // sc_tabs
+        $(".tab_content").hide();
+        $(".tab_content:first").show();
+
+        $("ul.tabs li").click(function() {
+            
+            $(".tab_content").hide();
+            var activeTab = $(this).attr("rel"); 
+            $("#"+activeTab).fadeIn();		
+            
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+        
+        });
+
+        $(".tab_drawer_heading").click(function() {
+        
+            $(".tab_content").hide();
+            var d_activeTab = $(this).attr("rel"); 
+            $("#"+d_activeTab).fadeIn();
+        
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(this).addClass("d_active");
+        
+        $("ul.tabs li").removeClass("active");
+        $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+        });
+        
+        $('ul.tabs li').last().addClass("tab_last");
+    </script>
+</body>
+
+</html>
